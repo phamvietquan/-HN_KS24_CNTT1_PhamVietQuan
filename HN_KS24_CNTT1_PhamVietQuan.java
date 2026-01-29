@@ -15,9 +15,10 @@ public class HN_KS24_CNTT1_PhamVietQuan {
             for (int i =0; i< count; i++){
                 System.out.printf("%d: %s",i+1, mssvList[i]);
                 if(i < count-1){
-                    System.out.printf(", ");
+                    System.out.print(", ");
                 }
             }
+            System.out.println();
         }
     }
     // thêm mới
@@ -145,6 +146,7 @@ public class HN_KS24_CNTT1_PhamVietQuan {
             System.out.println("6: Thoát");
             System.out.print("Lựa chọn của bạn: ");
             choice = sc.nextInt();
+            sc.nextLine();
             switch (choice){
                 case 1 :
                     displayMssv();
